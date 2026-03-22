@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    padding: 30px 70px 0;
+}
+
+h1, h2, h3, h4, p {
+    color: #353535;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__sidebar {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.sidebar_logotip {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;  
+    min-height: 73px;  
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+}
+
+.sidebar_menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.menu_list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+ul.menu_list li {
+    margin-right: 10px;
+}
+
+ul.menu_list li:last-child {
+    margin-right: 0px;
+}
+
+ul.menu_list li a {
+    text-decoration: none;
+    color: #292A2C;
+    letter-spacing: 0%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+ul.menu_list li a:active {
+    text-decoration: underline;
+    color: #006DF0;
+}
+
+.custom__block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 16px;
+}
+
+.selected {
+    display: flex;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+
+.selected img {
+    margin-right: 5px;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  background: white;
+  z-index: 10;
+}
+
+.options div {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.options div:hover {
+  background: #f0f0f0;
+}
+
+.become_client_block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+button.btn_become_client {
+    width: 180px;
+    height: 40px;
+    background-color: #0066CC;
+    border-radius: 7px;
+    border: none;
+    color: #f9f9f9;
+    font-size: 1rem;
+}

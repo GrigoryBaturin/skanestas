@@ -12,11 +12,14 @@ body {
     background-color: #f9f9f9;
     font-family: "Inter Tight", sans-serif;
     font-optical-sizing: auto;
-    padding: 30px 70px 0;
 }
 
 h1, h2, h3, h4, p {
     color: #292A2C;
+}
+
+.wrapper {
+    padding: 30px 70px 0;
 }
 
 header {
@@ -30,14 +33,6 @@ header {
     display: grid;
     grid-template-columns: 1fr 6fr;
     margin-bottom: 1.856em;
-}
-
-.sidebar_logotip {
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;  
-    min-height: 73px;  
 }
 
 .menu {
@@ -158,6 +153,11 @@ button.btn_become_client {
     padding: 40px;
 }
 
+.banner img {
+    border: none;
+    border-radius: 20px 20px 0 0;
+}
+
 .asset__manager_content {
     margin-top: 32px;
 }
@@ -194,7 +194,7 @@ button.btn_become_client {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 10px;
+    gap: 24px;
     margin-left: 24px;
 }
 
@@ -207,7 +207,6 @@ button.btn_become_client {
 .calculator {
     grid-template-columns: 1fr 1fr;
     grid-column: 1 / 3;
-    max-height: 338px;
     background-color: #95BEE7;
 }
 
@@ -276,4 +275,94 @@ button.btn_become_client {
 
 .light img {
     filter: brightness(0) invert(1);
+}
+
+.description p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #292A2CCC;
+    margin: 11px 0 0 40px;
+}
+
+.investment__process {
+    margin: 90px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.investment__process_text {
+    font-size: 3.125rem;
+    line-height: 130%;
+    font-weight: 500;
+    margin-right: 141px;
+}
+
+.investment__process_text span {
+    color: #006DF0;
+    font-style: italic;
+}
+
+.investment__process_cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.investment__process_cards .card {
+    background-color: #FEFEFE;
+    box-shadow: 2px 4px 10px 0px #97979740;
+    border: none;
+    border-radius: 1.875em;
+    width: 427px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.investment__process_cards .card h2 {
+    width: 262px;
+    height: 84px;
+    color: #353535;
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    top: 80px;
+    left: 24px;
+}
+
+.personalized_strategy, .active_managment,
+.portfolio_construction, .transparent_reporting {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: bottom right;
+}
+
+.personalized_strategy {
+    background-image: url(../images/investment__process_cards/chess.png);
+}
+
+.active_managment {
+    background-image: url(../images/investment__process_cards/up-arrow.png);
+}
+
+.portfolio_construction {
+    background-image: url(../images/investment__process_cards/cubes.png);
+}
+
+.transparent_reporting {
+    background-image: url(../images/investment__process_cards/graphic.png);
+}
+
+.investment__process .description {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #292A2CCC;   
+    text-align: center;
+    margin-top: 40px;
 }

@@ -7,9 +7,13 @@
     <title>Skanestas</title>
 </head>
 <body>
+<div class="wrapper">
+
     <header>
         <div class="header__sidebar">
-            <div class="sidebar_logotip"></div>
+            <div class="sidebar_logotip">
+                <img src="./images/logo.png" alt="">
+            </div>
             <div class="sidebar_menu">
                 <div class="menu">
                     <ul class="menu_list">
@@ -31,12 +35,15 @@
                         </div>
                     </div>
                     <div class="become_client_block">
-                        <button onclick="document.location='https://wings.xxx'" class="btn_become_client">Become a client</button>
+                        <button data-link="#" class="btn_become_client">Become a client</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header_widget_group">
+    </header>
+
+    <main>
+        <section class="header_widget_group">
             <div class="asset__manager">
                 <div class="banner">
                     <img src="./images/men-suits-shaking-hands.png" alt="">
@@ -65,6 +72,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="about_us">
                     <div class="section_title">
                         <h1>Our story of achievements</h1>
@@ -76,6 +84,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="become_client">
                     <div class="section_title light">
                         <h1>Request a private consultation</h1>
@@ -87,10 +96,63 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
-        </div>
-    </header>
+        </section>
+        <section class="description">
+            <p>
+                * Past performance is not a reliable indicator of future results. <br>
+                When investing, your capital is at risk and the value of your investments may fluctuate.<br>
+                ** Gross Figure, excluding any fees
+            </p>
+        </section>
+
+        <section class="investment__process">
+            <div class="investment__process_group">
+                <div class="investment__process_text">
+                    <p>
+                        Capital management is built on clarity and precision:<br>
+                        <span>Our investment process follows a transparent,</span> data-driven sequence — from defining your goals to active portfolio management and performance reporting.<br>
+                        <span>Every action is transparent. Every decision is aligned with your objectives:</span>
+                    </p>
+                </div>
+
+                <div class="investment__process_cards">
+                    <div class="card">
+                        <h2>
+                            Personalized strategy
+                        </h2>
+                        <div class="personalized_strategy"></div>
+                    </div>
+
+                    <div class="card active_managment">
+                        <h2>
+                            Active management
+                        </h2>
+                    </div>
+
+                    <div class="card portfolio_construction">
+                        <h2>
+                            Portfolio construction
+                        </h2>
+                    </div>
+
+                    <div class="card transparent_reporting">
+                        <h2>
+                            Transparent reporting
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="description">
+                <p>
+                    * When investing, your capital is at risk and the value of your investments may fluctuate
+                </p>
+            </div>
+        </section>
+    </main>
+
+</div>
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -117,11 +117,10 @@
                 </div>
 
                 <div class="investment__process_cards">
-                    <div class="card">
+                    <div class="card personalized_strategy">
                         <h2>
                             Personalized strategy
                         </h2>
-                        <div class="personalized_strategy"></div>
                     </div>
 
                     <div class="card active_managment">
@@ -150,9 +149,125 @@
                 </p>
             </div>
         </section>
+
+        <section class="ticker">
+            <div class="ticker__move">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+                <span>BECOME A CLIENT</span>
+                <img src="./images/Shopicon.png" alt="arrow" class="ticker__arrow">
+            </div>
+        </section>
+
+        <section class="performance-explorer">
+            <div class="container">
+                <div class="performance-explorer__grid">
+                    <!-- LEFT -->
+                    <div class="performance-explorer__left">
+
+                        <div class="explorer_text">
+                            <h2 class="performance-explorer__title">
+                                Explore how <span>your investment could have performed historically</span>
+                            </h2>
+
+                            <p class="performance-explorer__text">
+                                Use our historical data simulator to see potential outcomes based on different investment horizons and risk profiles.
+                            </p>
+                        </div>
+
+                        <div class="performance-explorer_calc">
+                            <!-- RANGE -->
+                            <div class="performance-explorer__field">
+                                <label class="performance-explorer__label">Investment amount</label>
+
+                                <div class="performance-explorer__range">
+                                    <div class="performance-explorer__range-value">
+                                        $ <span id="rangeValue">1 000 000</span>
+                                    </div>
+
+                                    <input type="range" min="500000" max="10000000" step="10000" value="1000000" class="performance-explorer__slider" id="rangeInput">
+                                </div>
+                                <div class="performance-explorer__range-labels">
+                                    <span>$ 500 000</span>
+                                    <span>$ 10 000 000</span>
+                                </div>
+                            </div>
+
+                            <!-- BUTTONS -->
+                            <div class="performance-explorer__field">
+                                <label class="performance-explorer__label">Investment horizon</label>
+
+                                <div class="performance-explorer__buttons">
+                                    <button class="performance-explorer__btn">Short-term (3 months)</button>
+                                    <button class="performance-explorer__btn performance-explorer__btn--active">Mid-term (6 months)</button>
+                                    <button class="performance-explorer__btn">1 year</button>
+                                </div>
+                            </div>
+
+                            <button class="performance-explorer__calculate">Calculate</button>
+                        </div>                        
+                    </div>
+
+                    <!-- CENTER -->
+                    <div class="performance-explorer__center">
+                        <p class="performance-explorer__chart-title">Past performance result</p>
+
+                        <div class="performance-explorer__chart"></div>
+
+                        <div class="performance-explorer__stats">
+                            <div>
+                                <span>Historical cumulative return:</span>
+                                <strong>+128%</strong>
+                            </div>
+                        <div>
+                            <span>Historical drawdown:</span>
+                            <strong>+128%</strong>
+                        </div>
+                        </div>
+
+                        <button class="performance-explorer__cta">Become a client</button>
+
+                        <p class="performance-explorer__note">
+                        * Results are illustrative and based on past performance data.
+                        </p>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="performance-explorer__right">
+                        <div class="performance-explorer__info">
+                            <h4>How to use</h4>
+                            <p>
+                                The calculator illustrates how an investment of 10.000 USD or more could have performed over three (3) investment horizons – 3 months, 6 months, and 12 months – based on historical statistical data on the 12-month period of 2025. To use the calculator, enter your investment amount and select your desired investment horizon. The results are simulated and provided for illustrative purposes only. This tool is intended to help you understand historical patterns and potential ranges of returns, not to predict future performance.
+                            </p>
+                        </div>
+
+                        <div class="performance-explorer__info">
+                            <h4>Disclaimer</h4>
+                            <p>
+                                Results are illustrative and based on simulated past performance data using historical statistical information from the trading on [derivatives] performed under the portfolio management service of the Company. Data is shown for the 12-month period of 2025, which reflects the full period for which comparable data are available. Figures are shown net of any costs, fees or applicable taxes. Results are presented in USD currency; returns may increase or decrease due to currency fluctuations. Past results do not guarantee future returns and are not a reliable indicator of future performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 </div>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

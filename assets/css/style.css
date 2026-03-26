@@ -28,7 +28,7 @@ header {
 .header__sidebar {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    margin: 0 70px 30px;
+    margin: 30px 70px;
 }
 
 .menu {
@@ -537,6 +537,7 @@ button.btn_become_client {
     border-radius: 7px;
     font-size: 1.5rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 /* CENTER */
@@ -648,10 +649,85 @@ button.btn_become_client {
     text-align: center;
 }
 
+.invest_confidently__container p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 130%;
+    text-align: center;
+    color: #A4A4A4CC;
+}
+
 .invest_confidently span {
     color: #006DF0;
     font-style: italic;
     font-weight: 500;
 }
 
+.items__institutional,
+.items__entrepreneurs {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 24px;
+    border-radius: 30px;
+    border: none;
+    background-color: #454648;
+    justify-items: center;
+    padding: 20px;
+}
+
+.items__institutional {
+    background-color: #454648;
+}
+
+.items__entrepreneurs {
+    background-color: #1E81CE;
+}
+
+.items__institutional img,
+.items__entrepreneurs img {
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+
+.btn_institutional, .btn_entrepreneurs {
+    width: clamp(200px, 50%, 384px);
+    padding: 24px 0;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 44px;
+    cursor: pointer;
+}
+
+.btn_institutional {
+    background-color: #1E81CE;
+    
+}
+
+.btn_entrepreneurs {
+    background-color: #454648;
+}
+
+.title_btn {
+    width: 100%;
+    height: auto;
+    border: 1px solid #F9F9F9;
+    border-radius: 20px;
+    padding: 32px 0 32px 30px;
+}
+
+.title_btn h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #fff;
+    max-width: 100%;
+}
 

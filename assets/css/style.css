@@ -28,7 +28,7 @@ header {
 .header__sidebar {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    margin: 0 70px 30px;
+    margin: 30px 70px;
 }
 
 .menu {
@@ -341,7 +341,7 @@ button.btn_become_client {
 }
 
 .investment__process_cards .card h2,
-.liquid_instruments_cards .card h2  {
+.liquid_instruments_cards .card h2 {
     width: 262px;
     height: 84px;
     color: #353535;
@@ -427,7 +427,6 @@ button.btn_become_client {
 .performance-explorer {
     padding: 100px 0;
     background: #F6F7F9;
-    margin: 0 70px;
 }
 
 .container {
@@ -442,7 +441,7 @@ button.btn_become_client {
 }
 
 /* LEFT */
-.performance-explorer__left { 
+.performance-explorer__left {
     display: grid;
     gap: 22px;
 }
@@ -551,6 +550,7 @@ button.btn_become_client {
     border-radius: 7px;
     font-size: 1.5rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 /* CENTER */
@@ -662,10 +662,86 @@ button.btn_become_client {
     text-align: center;
 }
 
+.invest_confidently__container p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 130%;
+    text-align: center;
+    color: #A4A4A4CC;
+}
+
 .invest_confidently span {
     color: #006DF0;
     font-style: italic;
     font-weight: 500;
+}
+
+.items__institutional,
+.items__entrepreneurs {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 24px;
+    border-radius: 30px;
+    border: none;
+    background-color: #454648;
+    justify-items: center;
+    padding: 20px;
+}
+
+.items__institutional {
+    background-color: #454648;
+}
+
+.items__entrepreneurs {
+    background-color: #1E81CE;
+}
+
+.items__institutional img,
+.items__entrepreneurs img {
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+
+.btn_institutional, .btn_entrepreneurs {
+    width: clamp(200px, 50%, 384px);
+    padding: 24px 0;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 44px;
+    cursor: pointer;
+}
+
+.btn_institutional {
+    background-color: #1E81CE;
+    
+}
+
+.btn_entrepreneurs {
+    background-color: #454648;
+}
+
+.title_btn {
+    width: 100%;
+    height: auto;
+    border: 1px solid #F9F9F9;
+    border-radius: 20px;
+    padding: 32px 0 32px 30px;
+}
+
+.title_btn h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #fff;
+    max-width: 100%;
 }
 
 /* Liquid instruments */
@@ -713,7 +789,72 @@ button.btn_become_client {
     background-color: #F9F9F9;
     border-radius: 40px 0 0;
     display: grid;
-    grid-template-rows: repeat(3 1fr);
-    padding: 40px 110px 40px;
+    gap: 40px;
+    padding: 48px;
 }
 
+.item_top_description h2 {
+    font-size: 2.5rem;
+    line-height: 130%;
+    letter-spacing: 0%;
+    font-weight: 500;
+}
+
+.item_top_description p {
+    font-size: 1.5rem;
+    line-height: 130%;
+    letter-spacing: 0%;
+    font-weight: 400;
+    color: #292A2C;
+}
+
+.item_top_description span {
+    text-decoration: underline;
+}
+
+.btn_item {
+    width: clamp(200px, 50%, 364px);
+    padding: 12px 0;
+    color: #F9F9F9;
+    background-color: #006DF0;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 130%;
+}
+
+.item_years, .item_client, .item_confirmed {
+    background-color: #F9F9F9;
+    padding: 11px 0 11px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.item_years p, .item_client p, .item_confirmed p {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+.item_years span, .item_client span, .item_confirmed span {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #292A2C;
+    margin-right: 40px;
+}
+
+.item_confirmed {
+    border-radius: 0 0 0 40px;
+}
+
+.experience_confidence_performance_img {
+    border-radius: 0 40px 40px 0;
+    background-color: #E3E9EB;
+}

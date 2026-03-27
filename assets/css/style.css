@@ -290,26 +290,37 @@ button.btn_become_client {
     margin: 11px 0 0 40px;
 }
 
-.investment__process {
+.investment__process,
+.liquid_instruments {
     margin: 90px 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.investment__process_text {
+.investment__process_text,
+.liquid_instruments_text h2 {
     font-size: 3.125rem;
     line-height: 130%;
     font-weight: 500;
     margin-right: 141px;
 }
 
-.investment__process_text span {
+.liquid_instruments_text h2 {
+    text-align: center;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.investment__process_text span,
+.liquid_instruments_text span {
     color: #006DF0;
     font-style: italic;
 }
 
-.investment__process_cards {
+.investment__process_cards,
+.liquid_instruments_cards {
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -317,7 +328,8 @@ button.btn_become_client {
     align-items: stretch;
 }
 
-.investment__process_cards .card {
+.investment__process_cards .card,
+.liquid_instruments_cards .card {
     background-color: #FEFEFE;
     box-shadow: 2px 4px 10px 0px #97979740;
     border: none;
@@ -328,7 +340,8 @@ button.btn_become_client {
     flex-direction: column;
 }
 
-.investment__process_cards .card h2 {
+.investment__process_cards .card h2,
+.liquid_instruments_cards .card h2  {
     width: 262px;
     height: 84px;
     color: #353535;
@@ -340,7 +353,9 @@ button.btn_become_client {
 }
 
 .personalized_strategy, .active_managment,
-.portfolio_construction, .transparent_reporting {
+.portfolio_construction, .transparent_reporting,
+.quantitative_research, .risk_management,
+.strategy_validation, .continuous_optimization {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -416,8 +431,7 @@ button.btn_become_client {
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
+    margin: 0 70px;
 }
 
 .performance-explorer__grid {
@@ -428,7 +442,7 @@ button.btn_become_client {
 }
 
 /* LEFT */
-.performance-explorer__left {
+.performance-explorer__left { 
     display: grid;
     gap: 22px;
 }
@@ -654,4 +668,52 @@ button.btn_become_client {
     font-weight: 500;
 }
 
+/* Liquid instruments */
+
+.quantitative_research {
+    background-image: url(../images/liquid_instruments/research.png);
+}
+
+.risk_management {
+    background-image: url(../images/liquid_instruments/risk_management.png);
+}
+
+.strategy_validation {
+    background-image: url(../images/liquid_instruments/validation.png);
+}
+
+.continuous_optimization {
+    background-image: url(../images/liquid_instruments/optimization.png);
+}
+
+
+/* Experience. Confidence. Performance. */
+
+.experience_confidence_performance {
+    background-color: #95BEE7;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience_confidence_performance .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.experience_confidence_performance_text {
+    display: grid;
+    gap: 24px;
+}
+
+.item_top_description {
+    background-color: #F9F9F9;
+    border-radius: 40px 0 0;
+    display: grid;
+    grid-template-rows: repeat(3 1fr);
+    padding: 40px 110px 40px;
+}
 

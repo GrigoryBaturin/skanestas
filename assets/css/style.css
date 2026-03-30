@@ -767,7 +767,7 @@ button.btn_become_client {
 
 .experience_confidence_performance {
     background-color: #95BEE7;
-    padding: 120px 0;
+    padding: 120px 0 68px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -856,5 +856,24 @@ button.btn_become_client {
 
 .experience_confidence_performance_img {
     border-radius: 0 40px 40px 0;
-    background-color: #E3E9EB;
+    background-color: #F9F9F9;
+}
+
+.slogan {
+    display: flex;
+}
+
+.slogan p {
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #292A2C;
+    padding: 15px 152px;
+}
+
+.investing_your_capital {
+    margin: 34px auto 0px;
 }

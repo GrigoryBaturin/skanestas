@@ -68,6 +68,7 @@ ul.menu_list li a {
 ul.menu_list li a:hover {
     text-decoration: underline;
     color: #006DF0;
+    transition: 0.5s;
 }
 
 .custom__block {
@@ -1003,17 +1004,18 @@ button.btn_become_client {
 }
 
 .form {
-    max-width: 100%;
+    width: 100%;
     display: grid;
     gap: 22px;
     grid-template-columns: 1fr 1fr;
 }
 
-.form-column-left,
-.form-column-right {
+.form-column-left, .form-column-right {
     display: grid;
     gap: 24px;
+    align-content: space-between;
 }
+
 
 .form-group.middle {
     display: grid;
@@ -1049,28 +1051,30 @@ button.btn_become_client {
 }
 
 .form label {
-    font-size: 14px;
+    font-size: 1.5rem;
     margin-bottom: 6px;
-    color: #2c2c2c;
+    color: #292A2C;
 }
 
 .form input,
 .form select {
-    height: 48px;
-    border-radius: 6px;
+    height: 65px;
+    border-radius: 5px;
     border: none;
-    padding: 0 12px;
+    padding: 17px 24px;
     background: #fff;
-    font-size: 14px;
+    font-size: 1.5rem;
 }
 
 .form-btn {
-    height: 48px;
+    max-width: 729px;
+    height: 100px;
     background: #006DF0;
-    color: #fff;
+    color: #F9F9F9;
     border: none;
-    border-radius: 6px;
-    font-size: 14px;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-weight: 400;
     cursor: pointer;
 }
 
@@ -1093,6 +1097,7 @@ button.btn_become_client {
     display: grid;
     gap: 22px;
     grid-template-columns: 1fr 1fr;
+    margin-top: 24px;
 }
 
 .description_left p, .description_right p {
@@ -1108,4 +1113,59 @@ button.btn_become_client {
 
 .description_right p {
     font-size: 1.125rem;
+}
+
+/* footer */
+
+footer {
+    background-color: #fff;
+    padding: 80px 0 27px;
+}
+
+footer .container {
+    margin: 0 70px;
+}
+
+.name_company {
+    max-width: 1480px;
+    height: auto;
+}
+
+.name_company img {
+    width: 100%;
+    height: auto;
+}
+
+.footer_menu {
+    margin: 40px 0 70px;
+    max-width: 1425px;
+}
+
+.footer_menu ul.footer_menu_list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 120px;
+    list-style: none;
+}
+
+.footer_menu ul.footer_menu_list li a {
+    font-size: 1.5rem;
+    color: #292A2C;
+    letter-spacing: 0%;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer_menu ul.footer_menu_list li a:hover {
+    color: #006DF0;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.linear {
+    border: 1px solid;
+    border-image-source: linear-gradient(to right, #CFCFCF, #696969, #CFCFCF);
+    border-image-slice: 1;
+    margin: 0 0 80px;
+    width: 100%;
 }

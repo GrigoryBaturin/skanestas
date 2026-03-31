@@ -1169,3 +1169,25 @@ footer .container {
     margin: 0 0 80px;
     width: 100%;
 }
+
+.information_purpose {
+    max-width: 1628px;
+}
+
+.information_purpose p, a {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #808080;
+}
+
+.information_purpose a:hover {
+    color: #006DF0;
+    transition: 0.5s;
+}
+
+.double {
+    margin: 62px 0 46px;
+}

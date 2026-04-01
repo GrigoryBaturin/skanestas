@@ -1,4 +1,32 @@
 
+//language switch
+
+const customSelect = document.querySelector('.custom-select');
+
+customSelect.addEventListener('click', () => {
+  customSelect.classList.toggle('open');
+});
+
+// опционально: закрыть при клике вне
+document.addEventListener('click', (e) => {
+  if (!customSelect.contains(e.target)) {
+    customSelect.classList.remove('open');
+  }
+});
+
+// обработка выбора
+customSelect.querySelectorAll('.options div').forEach(option => {
+  option.addEventListener('click', () => {
+    const imgSrc = option.querySelector('img').src;
+    const text = option.textContent.trim();
+    // обновляем выбранный блок
+    customSelect.querySelector('.selected').innerHTML = `<img src="${imgSrc}" width="30" alt=""> ${text}`;
+    // закрываем список
+    customSelect.classList.remove('open');
+  });
+});
+
+
 // ticker
 const tickerMove = document.querySelector('.ticker__move');
   const clone = tickerMove.innerHTML;

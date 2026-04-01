@@ -74,9 +74,11 @@ ul.menu_list li a:hover {
 .custom__block {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .custom-select {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,12 +89,27 @@ ul.menu_list li a:hover {
 
 .selected {
     display: flex;
-    padding: 5px 10px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     flex-direction: row;
     align-items: center;
     height: 40px;
+    position: relative;
+}
+
+.selected::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #333;
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
 }
 
 .selected img {
@@ -100,15 +117,25 @@ ul.menu_list li a:hover {
 }
 
 .options {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  display: none;
-  background: white;
-  z-index: 10;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    background: white;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.options img {
+    margin-right: 5px;
+}
+
+.custom-select.open .options {
+  display: block;
 }
 
 .options div {
@@ -860,6 +887,15 @@ button.btn_become_client {
     background-color: #F9F9F9;
 }
 
+.img_slogan {
+    max-width: 878px;
+    height: auto;
+}
+
+.img_slogan img {
+    width: 100%;
+}
+
 .slogan {
     display: flex;
 }
@@ -963,6 +999,7 @@ button.btn_become_client {
 }
 
 .management_strategies_graphic {
+    max-width: 968px;
     background-color: #DFDFDF;
     border: none;
     border-radius: 24px;
@@ -970,7 +1007,7 @@ button.btn_become_client {
 }
 
 .management_strategies_graphic img {
-    max-width: 968px;
+    width: 100%;
     height: auto;
 }
 
@@ -1004,7 +1041,7 @@ button.btn_become_client {
 }
 
 .form {
-    width: 100%;
+    max-width: 1482px;
     display: grid;
     gap: 22px;
     grid-template-columns: 1fr 1fr;
@@ -1076,21 +1113,6 @@ button.btn_become_client {
     font-size: 1.5rem;
     font-weight: 400;
     cursor: pointer;
-}
-
-/* адаптив */
-@media (max-width: 768px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-
-    .form-row:nth-child(2) {
-        grid-template-columns: 1fr;
-    }
-
-    .form-row:last-child {
-        grid-template-columns: 1fr;
-    }
 }
 
 .contact_us-description {
@@ -1176,7 +1198,6 @@ footer .container {
 
 .information_purpose p, a {
     font-weight: 500;
-    font-style: Medium;
     font-size: 1rem;
     line-height: 130%;
     letter-spacing: 0%;
@@ -1190,4 +1211,65 @@ footer .container {
 
 .double {
     margin: 62px 0 46px;
+}
+
+.copyright {
+    margin: 11px 0 0;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.copyright_documents {
+    display: grid;
+    gap: 40px;
+    grid-auto-flow: column;
+    align-content: center;
+}
+
+.copyright_documents ul {
+    list-style: none;
+    display: grid;
+    gap: 40px;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+
+.copyright_documents ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #292A2C;
+}
+
+.copyright_documents span {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #006DF0;
+    max-width: 457px;
+}
+
+.made_by {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.made_by img {
+    max-width: 121px;
+    height: auto;
+}
+
+
+/* Media */
+
+@media (max-width: 768px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
 }

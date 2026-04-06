@@ -438,8 +438,8 @@ button.btn_become_client {
 }
 
 .ticker__move img {
-    max-width: 48px;
-    max-height: 48px;
+    width: 100%;
+    height: 100%;
 }
 
 .ticker__arrow {

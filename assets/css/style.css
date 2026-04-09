@@ -4,14 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
     background-color: #f9f9f9;
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
 }
 
 h1, h2, h3, h4, p {
@@ -599,9 +599,16 @@ button.btn_become_client {
     align-items: center;
 }
 
+.performance-explorer-btn button > img {
+    margin-right: ;
+}
+
 .performance-explorer-btn button {
     max-width: 220px;
     max-height: 60px;
+    display: flex;
+    justify-items: center;
+    gap: 16px;
     padding: 16px 24px;
     text-transform: uppercase;
     color: #006DF0;
